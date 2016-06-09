@@ -12,10 +12,51 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  
+  // MARK:- Permutation
+  
+  func permutations<T>(array: [T]) -> [[T]] {
+    
+    if array.count == 1 {
+      return [[array[0]]]
+    }
+    
+    let firstElement = array[0]
+    
+    var subArray = array
+    subArray.removeFirst()
+    
+    var subPermutations = permutations(subArray)
+    
+    var results = [[T]]()
+    
+    for i in 0..<subPermutations.count {
+      for j in 0...subPermutations[i].count {
+        
+        var subResultArray = subPermutations[i]
+        
+        if j < subResultArray.count {
+          subResultArray.insert(firstElement, atIndex: j)
+        } else {
+          subResultArray.append(firstElement)
+        }
+        
+        results.append(subResultArray)
+      }
+    }
+    
+    return results
+  }
 
+  // MARK:- Application Lifecycle
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    let result = permutations([1, 2, 3, 4])
+    
+    print("result : \n\(result) \ncount : \(result.count)")
+    
     return true
   }
 
@@ -40,7 +81,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
 
 }
 

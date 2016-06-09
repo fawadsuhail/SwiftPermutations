@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		593CD8521D09EDA70002BC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CD8511D09EDA70002BC25 /* AppDelegate.swift */; };
-		593CD8541D09EDA70002BC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CD8531D09EDA70002BC25 /* ViewController.swift */; };
-		593CD8571D09EDA70002BC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593CD8551D09EDA70002BC25 /* Main.storyboard */; };
 		593CD8591D09EDA70002BC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593CD8581D09EDA70002BC25 /* Assets.xcassets */; };
 		593CD85C1D09EDA70002BC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593CD85A1D09EDA70002BC25 /* LaunchScreen.storyboard */; };
 		593CD8671D09EDA70002BC25 /* SwiftPermutationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CD8661D09EDA70002BC25 /* SwiftPermutationsTests.swift */; };
@@ -28,8 +26,6 @@
 /* Begin PBXFileReference section */
 		593CD84E1D09EDA70002BC25 /* SwiftPermutations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPermutations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		593CD8511D09EDA70002BC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		593CD8531D09EDA70002BC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		593CD8561D09EDA70002BC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		593CD8581D09EDA70002BC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		593CD85B1D09EDA70002BC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		593CD85D1D09EDA70002BC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				593CD8511D09EDA70002BC25 /* AppDelegate.swift */,
-				593CD8531D09EDA70002BC25 /* ViewController.swift */,
-				593CD8551D09EDA70002BC25 /* Main.storyboard */,
 				593CD8581D09EDA70002BC25 /* Assets.xcassets */,
 				593CD85A1D09EDA70002BC25 /* LaunchScreen.storyboard */,
 				593CD85D1D09EDA70002BC25 /* Info.plist */,
@@ -179,7 +173,6 @@
 			files = (
 				593CD85C1D09EDA70002BC25 /* LaunchScreen.storyboard in Resources */,
 				593CD8591D09EDA70002BC25 /* Assets.xcassets in Resources */,
-				593CD8571D09EDA70002BC25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				593CD8541D09EDA70002BC25 /* ViewController.swift in Sources */,
 				593CD8521D09EDA70002BC25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +213,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		593CD8551D09EDA70002BC25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				593CD8561D09EDA70002BC25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		593CD85A1D09EDA70002BC25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -386,6 +370,7 @@
 				593CD86D1D09EDA70002BC25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		593CD86E1D09EDA70002BC25 /* Build configuration list for PBXNativeTarget "SwiftPermutationsTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +379,7 @@
 				593CD8701D09EDA70002BC25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
