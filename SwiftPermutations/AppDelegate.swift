@@ -21,20 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return [[array[0]]]
     }
     
+    // lock the first element
     let firstElement = array[0]
     
+    // remove the locked element from the array
     var subArray = array
     subArray.removeFirst()
     
     var subPermutations = permutations(subArray)
-    
     var results = [[T]]()
     
     for i in 0..<subPermutations.count {
       for j in 0...subPermutations[i].count {
         
         var subResultArray = subPermutations[i]
-        
+     
         if j < subResultArray.count {
           subResultArray.insert(firstElement, atIndex: j)
         } else {
