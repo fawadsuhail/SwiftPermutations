@@ -9,7 +9,6 @@
 import Foundation
 
 extension Array {
-  
   func permutations() -> [[Element]] {
     if count == 1 {
       return [[self[0]]]
@@ -33,7 +32,6 @@ extension Array {
         results.append(subResultArray)
       }
     }
-    
     return results
   }
 }
