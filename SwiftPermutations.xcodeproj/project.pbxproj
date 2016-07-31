@@ -11,6 +11,7 @@
 		593CD8591D09EDA70002BC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593CD8581D09EDA70002BC25 /* Assets.xcassets */; };
 		593CD85C1D09EDA70002BC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593CD85A1D09EDA70002BC25 /* LaunchScreen.storyboard */; };
 		593CD8671D09EDA70002BC25 /* SwiftPermutationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CD8661D09EDA70002BC25 /* SwiftPermutationsTests.swift */; };
+		5985CB6C1D4DCF4C0004D661 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985CB6B1D4DCF4C0004D661 /* Permutations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		593CD8621D09EDA70002BC25 /* SwiftPermutationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPermutationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		593CD8661D09EDA70002BC25 /* SwiftPermutationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPermutationsTests.swift; sourceTree = "<group>"; };
 		593CD8681D09EDA70002BC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5985CB6B1D4DCF4C0004D661 /* Permutations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				593CD8511D09EDA70002BC25 /* AppDelegate.swift */,
+				5985CB6B1D4DCF4C0004D661 /* Permutations.swift */,
 				593CD8581D09EDA70002BC25 /* Assets.xcassets */,
 				593CD85A1D09EDA70002BC25 /* LaunchScreen.storyboard */,
 				593CD85D1D09EDA70002BC25 /* Info.plist */,
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5985CB6C1D4DCF4C0004D661 /* Permutations.swift in Sources */,
 				593CD8521D09EDA70002BC25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
