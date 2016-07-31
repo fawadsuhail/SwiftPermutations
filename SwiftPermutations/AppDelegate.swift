@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
     
-    let result = [1, "Hello", 3, 4].permutations()
-    print("permutations : \n\(result) \ncount : \(result.count)")
+    let result = [1, 2, 3].permutations()
+    print(result)
   
     return true
   }
